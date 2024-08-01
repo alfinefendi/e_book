@@ -7,10 +7,53 @@ class SavePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          'Save',
-          style: semiBoldText20,
+      backgroundColor: backgroundColor,
+      body: Container(
+        color: Colors.grey,
+        child: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.only(top: 40),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.blue,
+                    width: 250,
+                    height: 250,
+                    child: Center(
+                      child: Text('Python'),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.yellow,
+                    width: 250,
+                    height: 250,
+                  )
+                ],
+              ),
+              color: Colors.green,
+            ),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    color: Colors.deepPurple,
+                    width: 250, 
+                    height: 250,),
+                  Container(
+                    color: Colors.deepOrange,
+                    width: 250,
+                    height: 250,
+                    child: Center(
+                      child: Text('Yoroshiku'),
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );
