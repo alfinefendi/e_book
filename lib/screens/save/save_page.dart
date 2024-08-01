@@ -44,7 +44,7 @@ class SavePage extends StatelessWidget {
                     height: 250,),
                   Container(
                     color: Colors.deepOrange,
-                    width: 250,
+                    width: 240,
                     height: 250,
                     child: Center(
                       child: Text('Yoroshiku'),
