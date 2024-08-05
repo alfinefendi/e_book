@@ -9,24 +9,31 @@ Color greyColor = Color(0xFFBDBDBD);
 Color greyColorSearchField = Color(0xFFF8F8F8);
 Color greenColor = Color(0xFF098B5C);
 Color greyColorRecentBook = Color(0xFFAFAFAF);
+Color borderColorRecentBook = Color(0xFFF3F3F3);
 Color greyColorInfo = Color(0xFFF7F7F7);
 Color dividerColor = Color(0xFF6B6B6B);
 
 // SEMIBOLD TEXT
-TextStyle semiBoldText20 = GoogleFonts.poppins(fontSize: 20, fontWeight: semiBold);
-TextStyle semiBoldText16 = GoogleFonts.poppins(fontSize: 16, fontWeight: semiBold);
-TextStyle semiBoldText14 = GoogleFonts.poppins(fontSize: 14, fontWeight: semiBold);
-TextStyle semiBoldText12 = GoogleFonts.poppins(fontSize: 12, fontWeight: semiBold);
+TextStyle semiBoldText20 =
+    GoogleFonts.poppins(fontSize: 20, fontWeight: semiBold);
+TextStyle semiBoldText16 =
+    GoogleFonts.poppins(fontSize: 16, fontWeight: semiBold);
+TextStyle semiBoldText14 =
+    GoogleFonts.poppins(fontSize: 14, fontWeight: semiBold);
+TextStyle semiBoldText12 =
+    GoogleFonts.poppins(fontSize: 12, fontWeight: semiBold);
 
 // REGULAR TEXT
-TextStyle regularText14 = GoogleFonts.poppins(fontSize: 14, fontWeight: regular);
-TextStyle regularText12 = GoogleFonts.poppins(color: greyColor, fontSize: 12, fontWeight: regular);
+TextStyle regularText14 =
+    GoogleFonts.poppins(fontSize: 14, fontWeight: regular);
+TextStyle regularText12 =
+    GoogleFonts.poppins(color: greyColor, fontSize: 12, fontWeight: regular);
 
 // MEDIUM TEXT
-TextStyle mediumText12 = GoogleFonts.poppins(color: dividerColor, fontSize: 12, fontWeight: medium);
+TextStyle mediumText12 =
+    GoogleFonts.poppins(color: dividerColor, fontSize: 12, fontWeight: medium);
 TextStyle mediumText14 = GoogleFonts.poppins(fontSize: 14, fontWeight: medium);
 TextStyle mediumText10 = GoogleFonts.poppins(fontSize: 10, fontWeight: medium);
-
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;

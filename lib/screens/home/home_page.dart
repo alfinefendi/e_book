@@ -1,5 +1,6 @@
 import 'package:e_book/themes.dart';
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -79,6 +80,61 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget recentBook() {
+      return SingleChildScrollView(
+        padding: EdgeInsets.symmetric(horizontal: 30),
+        child: Row(
+          children: [
+            Container(
+              height: 150,
+              padding: EdgeInsets.all(15),
+              decoration: BoxDecoration(
+                border: Border.all(color: borderColorRecentBook),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(12),
+                ),
+              ),
+              child: Row(
+                children: [
+                  Image.asset(
+                    'assets/images/recentbook_1.png',
+                    width: 90,
+                  ),
+                  SizedBox(
+                    width: 18,
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'The Magic',
+                        style: semiBoldText14.copyWith(color: blackColor2),
+                      ),
+                      CircularPercentIndicator(
+                        reverse: true,
+                        radius: 20,
+                        lineWidth: 7,
+                        animation: true,
+                        percent: 0.5,
+                        circularStrokeCap: CircularStrokeCap.round,
+                        progressColor: greenColor,
+                      ),
+                      Text(
+                        '50% Completed',
+                        style: mediumText12.copyWith(
+                          color: greyColorRecentBook,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: backgroundColor,
       body: ListView(
@@ -92,7 +148,22 @@ class HomePage extends StatelessWidget {
               ),
             ),
             child: Column(
-              children: [header(), SizedBox(height: 30), searchField()],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                header(),
+                SizedBox(height: 30),
+                searchField(),
+                SizedBox(height: 30),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30),
+                  child: Text(
+                    'Recent Book',
+                    style: semiBoldText16.copyWith(color: blackColor),
+                  ),
+                ),
+                SizedBox(height: 12),
+                recentBook()
+              ],
             ),
           )
         ],
